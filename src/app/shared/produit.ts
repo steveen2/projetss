@@ -1,5 +1,6 @@
 export class produit{
-    constructor(public ref?:String,
+    constructor(public idproduit?:number,
+        public ref?:String,
         public quantite?: number,
         public prixunitaire?:number){
             

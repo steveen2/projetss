@@ -1,10 +1,24 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { RouterModule, Router, Routes } from "@angular/router";
+import { produitcomponent } from "./produit/poduit.componant";
+import { DashboardComponent } from "./dashboard/dashboard.component";
 
-const routes: Routes = [];
+export const appRoutes : Routes = [ 
+    {path:'produit',component:produitcomponent},
+    {path:'dashboard' ,component:DashboardComponent}
 
+];
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+imports: [
+    RouterModule.forRoot(
+        appRoutes,
+        {enableTracing:true}
+    )
+    
+],
+exports:[RouterModule]
 })
-export class AppRoutingModule { }
+
+export class AppRoutingModule{
+
+}

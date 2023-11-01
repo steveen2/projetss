@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projetss';
+  showHideSidebar: boolean=false;
+ 
+  
 }
